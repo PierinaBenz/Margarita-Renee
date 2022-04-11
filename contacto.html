@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./style/style.css" type="text/css">
+        <title>
+            Margarita&Renee
+        </title>
+    </head>
+     
+    <body>
+        <header>
+            <section>
+                <img src="./images/logo.jpg" alt="logo">
+            </section>
+            <nav class="nav_header">
+                    <a href="index.html">Inicio</a>
+                    <a href="quienesSomos.html">Quienes Somos</a>
+                    <a href="productos.html">Productos</a>
+                    <a href="preguntas_frecuentes.html">Preguntas frecuentes</a>
+                    <a href="contacto.html">Contacto</a>
+            </nav>    
+        </header>
+
+        <main>
+            <div class="contacto_form">
+                <div class="div_form">
+                    <div class="div_contacto">  
+                        <ul>
+                         <li><img src="./images/logo mail.png" class="img_p">
+                            <span> Margarita.renee1130@gmail.com</span>  </li>
+                         <li><img src="./images/telefono.png" class="img_p">
+                            <span>+54 1111 2222</span>   </li>
+                         <li>
+                            <img src="./images/ubicacion.png" class="img_p">
+                            <span> Morón, Buenos Aires</span></li>
+                        </ul>   
+                    </div>    
+                </div>
+                <div class="div_form">
+                    <div class="div_redes">
+                        <ul>
+                            <li id="Ig_li">
+                             <img src="./images/logoIg.png" class="img_p">
+                             <a target="_blank" href="https://instagram.com/margaritarenee.ok?utm_medium=copy_link">Seguinos en Instagram</a>
+                            </li>
+    
+                            <li>
+                             <img src="./images/Facebook.png" class="img_p">
+                             <a target="_blank" href="https://www.facebook.com/margarita.renee.12">Seguinos en Facebook</a>
+                            </li>
+                            
+                        </ul>
+       
+                    </div>
+                </div>
+            
+            
+               <div class="form_contacto">
+                     <!-- LISTA ORDENADA-->
+                     <form action="formularios/nuevos formularios" method="post">
+                        <h1> Contacto</h1>
+                    
+                        <ul>
+                        <li>
+                            <label for="nombre" class="form_label">
+                                Nombre
+                            </label>
+                            <input id="nombre" type="text" class="form_control">
+                        </li>
+                       
+                        <li>
+                            <label for="email" class="form_label">
+                                Email
+                            </label>
+                            <input id="email" type="email" required="required" class="form_control">
+                        </li>
+    
+                        <li>
+                            <label for="telefono" class="form_label">
+                                Telefono
+                            </label>
+                            <input id="telefono" type="telefono" required="required" class="form_control">
+                        </li>
+                     
+                        <li>
+                            <label for="mensaje" class="form_label" id="mensaje">
+                                Mensaje
+                            </label>
+                            <input id="mensaje" type="mensaje" required="required" class="form_control">
+                        </li>
+    
+                        <li>
+                            <label for="">Acepta las condiciones:</label> 
+                            <input type="checkbox" name="acepta" value="1"/>
+                        </li>
+                     
+                        <li>
+                            <input type="submit" value="Enviar Formulario">
+                            <input type="reset" value="Resetear Campos">
+                        </li> 
+                    
+                </div>     
+                
+            </div>  
+        </main>
+        
+        <footer>
+            <div class="div_footer_style">
+                <nav class="nav_footer" id="lateral">
+                    <ul>
+                        <li>
+                            <a href="index.html">Inicio</a>
+                        </li>
+                        <li>
+                            <a href="quienesSomos.html">Quienes Somos</a>
+                        </li>
+                        <li>
+                            <a href="productos.html">Productos</a>
+                        </li>
+                        <li>
+                            <a href="preguntas_frecuentes.html">Preguntas frecuentes</a>
+                        </li>
+                        <li>
+                            <a href="contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </nav>
+                <section class="inside_footer" id="centro">
+                    <div class="div_linea"> 
+                        <p class="redes_p"><strong> Seguinos </strong><p>
+                        <img src="./images/logoIg.png" class="img_p">
+                        <img src="./images/Facebook.png" class="img_p">
+                        <h5 class="redes_p">Newsletter </h5>
+                    </div>
+                </section>    
+                <section class="inside_footer" id="lateral">
+                    <div class="div_footer_direc">   
+                        <img src="./images/logo mail.png" class="img_p">
+                        <span> Margarita.renee1130@gmail.com</span>   
+                    </div> 
+                    <div class="div_footer_direc">
+                        <img src="./images/telefono.png" class="img_p">
+                        <span>+54 1111 2222</span>   
+                    </div>    
+                    <div class="div_footer_direc">
+                        <img src="./images/ubicacion.png" class="img_p">
+                        <span> Morón, Buenos Aires</span>
+                    </div> 
+                </section>
+            </div> 
+        </footer>
+    </body>       
+</html>
