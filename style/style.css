@@ -100,10 +100,9 @@ a{
    
 }
 
-.animate_animated{
-    animation-duration: 10s;
-    animation-iteration-count: infinite;
-
+.animate__animated.animate__pulse{
+    
+    animation-duration: 5s;
 }
 
 .div_polaroid{
