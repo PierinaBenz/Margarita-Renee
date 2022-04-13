@@ -96,24 +96,26 @@ a{
     display: inline-block;
     width: 100%;
     text-align: center; 
-    margin-top: 50px; 
-   
+    margin-top: 50px;
 }
 
-.animate__animated.animate__pulse{
-    
+.animate__animated.animate__pulse{ 
     animation-duration: 5s;
 }
 
 .div_polaroid{
-    display:inline-block;
-    width: 20%;
-    padding-bottom: 13px;
-    margin-right: 100px;
-    margin-left:100px;
+    display: inline-block;
+    justify-items: stretch;
+    margin: 5%;
+    padding: 20px;
     background-color: white;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     
+}
+
+.img_pol{
+ max-width: 1000px ;
+ max-height: 1000px ;
 }
 
 footer{
@@ -125,7 +127,10 @@ footer{
 
 .div_footer_style{
     background-color: rgba(230, 214, 204, 0.87);
-    
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
 }
 
 .nav_footer{
@@ -135,6 +140,7 @@ footer{
     font-size: 14px;
     font-family: 'PT Serif', serif;
 }
+
 
 ul{
     list-style: none;
@@ -156,13 +162,15 @@ ul{
 }
 
 #centro{
-    width: 57%;
+    display:inline-block;
+    min-width: 30%;
+    
     margin-bottom: 10px;  
 }
 #lateral{
     display:inline-block;
-    width: 20%;
-    margin-bottom: 10px; 
+    min-width: 30%;
+    margin-bottom: 10px;
 }
 
 .div_footer_direc{
@@ -206,7 +214,7 @@ ul{
     align-items: start;
     max-width: 100%;
     max-height: 800px;
-    grid-template-columns: 5fr 5fr;
+    grid-template-columns: 2fr 2fr;
     grid-template-areas: 0.5fr;
     grid-column-gap: 10px;
     grid-row-gap: 10px;
@@ -363,6 +371,7 @@ ul{
 
 
 .contacto_form{
+
     display: grid;
     justify-items:center;
     align-items: start;
@@ -384,24 +393,29 @@ ul{
 }
 
 .form_control{
+    
     height: 40px;
     width: 100%;
-    padding: 10px;
+    padding: 0;
     margin: 0;
     box-sizing: border-box;
 
 }
 
-#mensaje{
+#mensaje_li{
     margin: 0;
     max-width: 100%;
-    height: 70px;
+    height: 50px;
     margin-top: 2px;
     margin-bottom: 4px;
-    padding: 1px;
     box-sizing: content-box;
       
 }
+scroll-container {
+    display: inline-block;
+    overflow-y: scroll;
+    scroll-behavior: auto;
+  }
 
 .titulo_preguntas{
     font-size: 20px;
@@ -423,3 +437,26 @@ ul{
     margin-top: 50px;
 }
 
+@media screen and (max-width:480px) {
+    
+    .body{
+        display: grid;
+        grid-template-columns: repeat 1fr;
+        grid-template-areas: 
+        "header"
+        "main"
+        "footer";
+    }
+
+    .form_contacto{
+        display: flex;
+        max-width: none;
+    }
+    
+    .contacto_form{
+        display: grid;
+        
+        
+    }
+    
+}
