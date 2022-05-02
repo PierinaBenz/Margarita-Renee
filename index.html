@@ -20,21 +20,55 @@
     </head>
 
     <body>
+        <header>
+            <nav class="navbar navbar-light bg-light fixed-top" id="nav_phone">
+                <div class="container-fluid" >
+                  <a class="navbar-brand" href="#">INICIO</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel";>
+                    <div class="offcanvas-header">
+                      <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Margarita & Reneé</h5>
+                      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                      <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                          <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="quienesSomos.html">Quienes Somos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="productos.html">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="preguntas_frecuentes.html">Preguntas frecuentes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacto.html">Contacto</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </nav>
+
+            <section>
+                <img src="./images/logo.jpg" alt="logo">
+            </section>
+
+            <nav class="nav_header">
+                <a href="index.html">Inicio</a>
+                <a href="quienesSomos.html">Quienes Somos</a>
+                <a href="productos.html">Productos</a>
+                <a href="preguntas_frecuentes.html">Preguntas frecuentes</a>
+                <a href="contacto.html">Contacto</a>
+            </nav>
+        </header>
+
         <main>
-
-            <header>
-                <section>
-                    <img src="./images/logo.jpg" alt="logo">
-                </section>
-                <nav class="nav_header">
-                    <a href="index.html">Inicio</a>
-                    <a href="quienesSomos.html">Quienes Somos</a>
-                    <a href="productos.html">Productos</a>
-                    <a href="preguntas_frecuentes.html">Preguntas frecuentes</a>
-                    <a href="contacto.html">Contacto</a>
-                </nav>
-            </header>
-
             <div
                 id="carouselExampleSlidesOnly"
                 class="carousel slide"
@@ -52,14 +86,13 @@
                 </div>
             </div>
 
-            <div class="p_envios">
-                <section class="div_envios">
-                    <h1>
-                        Envios gratis</h1>
+            <div class="div_envios_contenedor">
+                <section class="div_envios" id="env1">
+                    <h2>Envios gratis</h2>
                     <p>En compras superiores a $3000</p>
                 </section>
 
-                <section class="div_envios">
+                <section class="div_envios" id="env2">
                     <h2>
                         Envíos a todo el país</h2>
                     <p>
@@ -68,41 +101,85 @@
                 </section>
             </div>
 
-            <div class="section_article">
-                <article class="article_p">
-                    <h1>
+            <div class="div_hechoCalidadSustentable">
+                <article class="article_hechoCalidadSustentable">
+                    <h2>
                         <strong>Hecho a mano</strong>
-                    </h1>
-                    <p>
+                    </h2>
+                    <p id="p_index_hcs">
                         Todo el proceso se hacen con manos expertas, la preparación, el volcado, la
                         terminación y el empaque.
                     </p>
                 </article>
-                <article class="article_p">
-                    <h1>
+                <article class="article_hechoCalidadSustentable">
+                    <h2>
                         <strong>
                             Calidad
                         </strong>
-                    </h1>
-                    <p>
+                    </h2>
+                    <p id="p_index_hcs">
                         Más de 20 años de experiencia cuidando cada detalle en el diseño, producción y
                         entrega de todos nuestros productos.
                     </p>
                 </article>
-                <article class="article_p">
-                    <h1>
+                <article class="article_hechoCalidadSustentable">
+                    <h2>
                         <strong>
                             Sustentable
                         </strong>
-                    </h1>
-                    <p>
+                    </h2>
+                    <p id="p_index_hcs">
+                        Nos inspira la naturaleza. Investigamos y desarrollamos mezclas y blends que
+                        sean respuestuosos con el medio ambiente.
+                    </p>
+                </article>
+
+
+                <article class="mobile_hechoCalidadSustentable">
+                    <div id="hcs">
+                        <img src="./images/hecho.png"  id="hcs">
+                    </div>
+                    <h2 id="h2hcs">
+                        <strong>
+                            Hecho a mano
+                        </strong>
+                    </h2>
+                    <p id="phcs">
+                        Todo el proceso se hacen con manos expertas, la preparación, el volcado, la
+                        terminación y el empaque.
+                    </p>
+                </article>
+                <article class="mobile_hechoCalidadSustentable">
+                    <div id="hcs">
+                        <img src="./images/calidad.png" id="hcs">
+                    </div>
+                    <h2 id="h2hcs">
+                        <strong>
+                            Calidad
+                        </strong>
+                    </h2>
+                    <p id="phcs">
+                        Más de 20 años de experiencia cuidando cada detalle en el diseño, producción y
+                        entrega de todos nuestros productos.
+                    </p>
+                </article>
+                <article class="mobile_hechoCalidadSustentable">
+                    <div id="hcs">
+                        <img src="./images/sustentable.png"  id="hcs">
+                    </div>
+                    <h2 id="h2hcs">
+                        <strong>
+                            Sustentable
+                        </strong>
+                    </h2>
+                    <p id="phcs">
                         Nos inspira la naturaleza. Investigamos y desarrollamos mezclas y blends que
                         sean respuestuosos con el medio ambiente.
                     </p>
                 </article>
             </div>
 
-            <div class="div_linea">
+            <div class="div_lineas_contenedor">
                 <div class="animate__animated animate__pulse">
                     <h3>Nuestras líneas</h3>
 
@@ -119,60 +196,54 @@
             </div>
         </main>
 
-        <footer >
-            <div class="div_footer_style">
-                <nav class="nav_footer">
-                    <ul>
-                        <li>
-                            <a href="index.html">Inicio</a>
-                        </li>
-                        <li>
-                            <a href="quienesSomos.html">Quienes Somos</a>
-                        </li>
-                        <li>
-                            <a href="productos.html">Productos</a>
-                        </li>
-                        <li>
-                            <a href="preguntas_frecuentes.html">Preguntas frecuentes</a>
-                        </li>
-                        <li>
-                            <a href="contacto.html">Contacto</a>
-                        </li>
-                    </ul>
-                </nav>
-                <section class="inside_footer">
-                    <div class="div_linea">
-                        <p class="redes_p">
-                            <strong>
-                                Seguinos
-                            </strong>
-                            <p>
-                                <img src="./images/logoIg.png" class="img_p">
-                                <img src="./images/Facebook.png" class="img_p">
-                            </div>
-                            <div class="div_linea"></section>
-                            <nav class="nav_footer">
-                                <ul>
-                                    <li>
-                                        <img src="./images/logo mail.png" class="img_p">
-                                        <span>
-                                            Margarita.renee1130@gmail.com</span>
-                                    </li>
-
-                                    <li>
-                                        <img src="./images/telefono.png" class="img_p">
-                                        <span>+54 1111 2222</span>
-                                    </li>
-                                    <li>
-                                        <img src="./images/ubicacion.png" class="img_p">
-                                        <span>
-                                            Morón, Buenos Aires</span>
-                                    </li>
-                                </ul>
-                            </nav>
-
+        <footer>
+            <div class="contenedor_footer">
+                <div class="contenedor_redes_footer">
+                    <div class="newsletter_footer">
+                        <div>
+                            <p id="news"><strong>Newsletter</strong></p>
+                            <form class="row g-0 d-flex justify-content-center" id="news">
+                                <div class="col-auto">
+                                  <label for="inputEmailLabel" class="visually-hidden">Email</label>
+                                  <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+                                </div>
+                                <div class="col-auto">
+                                    <button type="submit" class="btn btn-secondary">Enviar</button>
+                                </div>
+                            </form>
                         </div>
-                    </footer>
+                    </div>
+                    <div class="sitios_footer">
+                        <p><strong>Seguinos</strong></p>
+                        <p class="redes_p">
+                            <img src="./images/logoIg.png" class="img_p">
+                            <img src="./images/Facebook.png" class="img_p">
+                        </p>        
+                    </div>
+                    <div class="contacto_footer">
+                        <div>
+                            <img src="./images/logo mail.png" class="img_p">
+                            <span> Margarita.renee1130@gmail.com</span>
+                        </div>
+                        <div>
+                            <img src="./images/telefono.png" class="img_p">
+                            <span>+54 1111 2222</span>
+                        </div>
+                        <div>
+                            <img src="./images/ubicacion.png" class="img_p">
+                            <span> Morón, Buenos Aires</span>
+                        </div>
+                    </div>
+                    <nav class="pie_navegador_footer">
+                        <a href="index.html">Inicio</a>
+                        <a href="quienesSomos.html">Quienes Somos</a>
+                        <a href="productos.html">Productos</a>
+                        <a href="preguntas_frecuentes.html">Preguntas frecuentes</a>
+                        <a href="contacto.html">Contacto</a>
+                    </nav>
+                </div>
+            </div>
+        </footer>
 
                     <script
                     src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
