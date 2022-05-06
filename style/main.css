@@ -1,2 +1,279 @@
-h1 {
-  color: blue; }
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif&display=swap");
+header {
+  font-family: "PT Serif", serif;
+  text-align: center;
+  background-color: rgba(230, 214, 204, 0.87); }
+  header #nav_phone {
+    display: none; }
+  header img {
+    background-size: cover;
+    position: relative;
+    width: 250px;
+    height: 250px; }
+  header .nav_header {
+    box-shadow: none;
+    text-decoration: none;
+    text-align: center;
+    position: relative;
+    top: 12px;
+    font-size: 15px;
+    font-family: "PT Serif", serif;
+    text-align: center;
+    display: inline-block;
+    margin-bottom: 20px; }
+  header a {
+    margin-right: 20px;
+    text-decoration: none;
+    box-shadow: none;
+    font-family: "PT Serif", serif; }
+  header A:link {
+    text-decoration: none, "PT Serif", serif; }
+  header A:hover {
+    color: black;
+    font-family: "PT Serif", serif;
+    text-decoration: none; }
+  header A:visited {
+    color: black;
+    font-family: "PT Serif", serif;
+    text-decoration: none; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh; }
+
+.offcanvas-title {
+  font-family: "PT Serif", serif;
+  font-weight: bold; }
+
+.nav-item {
+  font-family: "PT Serif", serif; }
+
+main {
+  margin-bottom: 50px; }
+
+header {
+  box-shadow: none;
+  text-decoration: none; }
+
+img {
+  background-size: cover;
+  position: relative;
+  width: 300px;
+  height: 300px; }
+
+ul {
+  list-style: none;
+  padding: 0; }
+
+footer {
+  background-color: rgba(230, 214, 204, 0.87); }
+  footer .contenedor_footer {
+    padding-top: 50px;
+    display: block; }
+
+.div_envios_contenedor {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas: "a b";
+  background-size: cover;
+  font-size: 12px;
+  font-family: "PT Serif", serif; }
+  .div_envios_contenedor .div_envios {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    text-align: center;
+    margin-top: 100px;
+    align-self: flex-start; }
+
+.div_hechoCalidadSustentable {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-align: center;
+  margin-top: 100px; }
+  .div_hechoCalidadSustentable .article_hechoCalidadSustentable {
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    display: inline-block;
+    background-color: rgba(230, 214, 204, 0.87);
+    background-size: cover;
+    font-size: 13px;
+    font-family: "PT Serif", serif; }
+  .div_hechoCalidadSustentable .mobile_hechoCalidadSustentable {
+    display: none;
+    font-size: 13px;
+    font-family: "PT Serif", serif; }
+
+.div_lineas_contenedor {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  margin-top: 50px; }
+  .div_lineas_contenedor .animate__animated.animate__pulse {
+    animation-duration: 5s; }
+    .div_lineas_contenedor .animate__animated.animate__pulse .div_polaroid {
+      display: inline-block;
+      justify-items: stretch;
+      margin: 5%;
+      padding: 20px;
+      background-color: white;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+
+.contenedor_footer {
+  padding-top: 50px;
+  display: block;
+  font-family: "PT Serif", serif; }
+  .contenedor_footer .contenedor_redes_footer {
+    font-family: "PT Serif", serif;
+    display: grid;
+    grid-template-columns: 15fr 15fr 15fr;
+    grid-template-rows: 15fr 15fr;
+    grid-template-areas: "a b c" "d d d"; }
+    .contenedor_footer .contenedor_redes_footer .newsletter_footer {
+      grid-area: a;
+      font-size: 14px;
+      font-family: "PT Serif", serif;
+      align-self: center;
+      justify-self: center;
+      text-align: center; }
+      .contenedor_footer .contenedor_redes_footer .newsletter_footer #news {
+        text-align: center; }
+    .contenedor_footer .contenedor_redes_footer .sitios_footer {
+      grid-area: b;
+      font-size: 14px;
+      font-family: "PT Serif", serif;
+      align-self: center;
+      justify-self: center;
+      text-align: center; }
+      .contenedor_footer .contenedor_redes_footer .sitios_footer .redes_p {
+        display: inline-block;
+        background-color: rgba(230, 214, 204, 0.87);
+        font-size: 14px;
+        font-family: "PT Serif", serif; }
+        .contenedor_footer .contenedor_redes_footer .sitios_footer .redes_p .img_p {
+          background-size: cover;
+          position: relative;
+          width: 20px;
+          height: 20px; }
+    .contenedor_footer .contenedor_redes_footer .contacto_footer {
+      grid-area: c;
+      font-size: 14px;
+      font-family: "PT Serif", serif;
+      background-size: cover;
+      align-self: center;
+      justify-self: center;
+      text-align: center; }
+      .contenedor_footer .contenedor_redes_footer .contacto_footer .img_p {
+        background-size: cover;
+        position: relative;
+        width: 20px;
+        height: 20px; }
+    .contenedor_footer .contenedor_redes_footer .pie_navegador_footer {
+      grid-area: d;
+      flex-grow: 1;
+      font-size: 15px;
+      font-family: "PT Serif", serif;
+      text-align: center;
+      position: relative;
+      padding-top: 50px; }
+      .contenedor_footer .contenedor_redes_footer .pie_navegador_footer a {
+        margin-right: 20px;
+        text-decoration: none;
+        box-shadow: none;
+        font-family: "PT Serif", serif; }
+      .contenedor_footer .contenedor_redes_footer .pie_navegador_footer A:link {
+        text-decoration: none, "PT Serif", serif; }
+      .contenedor_footer .contenedor_redes_footer .pie_navegador_footer A:hover {
+        color: black;
+        font-family: "PT Serif", serif;
+        text-decoration: none; }
+      .contenedor_footer .contenedor_redes_footer .pie_navegador_footer A:visited {
+        color: black;
+        font-family: "PT Serif", serif;
+        text-decoration: none; }
+
+@media screen and (max-width: 480px) {
+  body {
+    display: grid;
+    grid-template-columns: repeat 1fr;
+    grid-template-areas: "header" "main" "footer"; }
+  header #nav_phone {
+    display: contents; }
+    header #nav_phone .container-fluid {
+      padding-top: 5px; }
+  header .nav_header {
+    display: none; }
+  header {
+    flex-direction: column;
+    justify-content: center; }
+  .div_envios_contenedor {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr;
+    grid-template-areas: " a " " b "; }
+    .div_envios_contenedor .div_envios {
+      display: grid;
+      justify-self: center; }
+      .div_envios_contenedor .div_envios #env1 {
+        grid-area: a; }
+      .div_envios_contenedor .div_envios #env2 {
+        grid-area: b; }
+  .div_hechoCalidadSustentable {
+    text-align: left;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr;
+    grid-template-areas: " a " " b " " c "; }
+    .div_hechoCalidadSustentable .article_hechoCalidadSustentable {
+      display: none; }
+    .div_hechoCalidadSustentable .mobile_hechoCalidadSustentable {
+      background-color: rgba(230, 214, 204, 0.87);
+      background-blend-mode: color-burn;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      padding-left: 50px;
+      padding-right: 50px;
+      display: grid;
+      grid-template-columns: 3fr;
+      grid-template-rows: 3fr;
+      grid-gap: 5px;
+      grid-template-areas: "a . b ."  ". . c c" ". . c c"; }
+      .div_hechoCalidadSustentable .mobile_hechoCalidadSustentable #hcs {
+        grid-area: a;
+        width: 40px;
+        height: 40px; }
+      .div_hechoCalidadSustentable .mobile_hechoCalidadSustentable #h2hcs {
+        grid-area: b;
+        margin-bottom: 0; }
+      .div_hechoCalidadSustentable .mobile_hechoCalidadSustentable #phcs {
+        grid-area: c; }
+  footer .contenedor_footer {
+    padding-top: 0; }
+    footer .contenedor_footer .contenedor_redes_footer {
+      display: flex;
+      flex-direction: column;
+      background-color: rgba(230, 214, 204, 0.87); }
+      footer .contenedor_footer .contenedor_redes_footer .pie_navegador_footer {
+        font-size: 13px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        align-self: center; }
+        footer .contenedor_footer .contenedor_redes_footer .pie_navegador_footer a {
+          margin-right: 20px;
+          text-decoration: none;
+          box-shadow: none;
+          font-family: "PT Serif", serif; }
+        footer .contenedor_footer .contenedor_redes_footer .pie_navegador_footer A:link {
+          text-decoration: none, "PT Serif", serif; }
+        footer .contenedor_footer .contenedor_redes_footer .pie_navegador_footer A:hover {
+          color: black;
+          font-family: "PT Serif", serif;
+          text-decoration: none; }
+        footer .contenedor_footer .contenedor_redes_footer .pie_navegador_footer A:visited {
+          color: black;
+          font-family: "PT Serif", serif;
+          text-decoration: none; }
+  /* QUIENES SOMOS*/ }
