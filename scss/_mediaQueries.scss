@@ -7,6 +7,19 @@
         "header"
         "main"
         "footer";
+
+        #carrito{
+            width: 30px;
+            height: 30px;
+        }
+    }
+
+    main{
+        margin: 0 0 100px 0;
+        #carrousel_index{
+            height: 20%;
+            width: 100%;
+        }
     }
 
     header{
@@ -17,7 +30,15 @@
                 padding-top: 5px;
             }
         }
-        .nav_header{
+
+        .contenedor_header{
+            display: none;
+        }
+        
+        .logo_mobile{
+            display: contents;
+        }
+        .logo{
             display:none;
         }
     }
@@ -28,22 +49,20 @@
     }
 
     .div_envios_contenedor{
-        display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 2fr;
         grid-template-areas:
         " a "
         " b ";
-
         .div_envios{
             display: grid;
             justify-self: center;
 
-            #env1{
+            #envio1{
                 grid-area: a;
             }
         
-            #env2{
+            #envio2{
                 grid-area: b;
             }
         }
@@ -64,7 +83,7 @@
         }
 
         .mobile_hechoCalidadSustentable{
-            background-color: rgba(230, 214, 204, 0.87);
+            background-color: $colorPrincipal;
             background-blend-mode: color-burn;
             padding-top: 20px;
             padding-bottom: 20px;
@@ -83,7 +102,6 @@
                 grid-area: a;
                 width: 40px;
                 height: 40px;
-        
             }
         
             #h2hcs{
@@ -98,14 +116,13 @@
     }
 
     footer{
-
         .contenedor_footer{
             padding-top: 0;
 
             .contenedor_redes_footer{
                 display: flex;
                 flex-direction: column;
-                background-color: rgba(230, 214, 204, 0.87);
+                background-color: $colorPrincipal;
 
                 .pie_navegador_footer{
                     font-size: 13px;
@@ -128,8 +145,123 @@
                 }
             }
         }
-
     }
 
     /* QUIENES SOMOS*/
+
+    .quienesSomos{
+        display: grid;
+        grid-template-columns: 1fr !important;
+        grid-template-rows: 2fr !important;
+        grid-template-areas:
+        " a "
+        " b " !important;
+        .divImgSomos{    
+            grid-area:a;
+        }
+        #pSomos{
+            padding: 3%;
+            grid-area:b;
+        }
+    }
+
+    /* PRODUCTOS */
+
+    .div_productos{
+        .div_central_productos .div_categorias{
+            display:none;
+        }
+
+        .div_central_productos {
+            .div_img_productos{
+                .div_img{
+                    max-width: 100%;
+                    grid-template-columns: repeat(2,15fr) !important;
+                    .productos{
+                        max-width: 100%;
+                        box-sizing: content-box;
+                        object-fit: cover;
+                    }
+                }
+            }
+        }
+        
+
+        margin:0 5% 0 5%;
+        .section_f{
+            display: inline-block;
+            .formulario{
+                align-items: left;
+                float: left;
+                width: 194px;
+            }
+            .filtrar{
+                background-color: wheat;
+                display:contents;
+                #boton_filtrar{
+                    border: 1px solid;
+                    float:right;
+                }
+                .filtros_productos{
+                    background-color: white;
+                    width: 100%;
+                    height: 100%;
+                }
+                #toggle:checked + .filtros_productos{
+                    display: grid;
+                    grid-template-columns: 1fr !important;
+                    z-index: 10;
+                    top:0;
+                    left:0;
+                    justify-content: center;
+                    position: fixed;
+                    background-color: white;
+                }
+            }
+        }
+    }
+
+
+
+    /* CONTACTO */
+
+    .primer_div_contacto{
+        margin: 25px;
+    }
+    .general_div_contacto{
+        grid-template-columns: repeat( 1, 1fr) !important;
+        grid-template-rows: repeat (2, 1fr) !important;
+        grid-template-areas: 0.5fr;
+        grid-column-gap: 10px !important ;
+        grid-row-gap: 30px !important;
+        grid-template-areas:
+        " b "
+        " a " !important;
+        .agrupo_redes_contacto{
+            grid-area: a;
+            grid-template-columns: repeat( 1, 1fr) !important;
+            grid-template-rows: repeat (2, 1fr) !important;
+            grid-template-areas:
+            " a "
+            " b " !important;
+            .div_redes{
+                a{
+                    margin: 0 !important;
+                    text-decoration: none;
+                    color: inherit;
+                }
+                a:hover { color: black; font-family: $fuentePrincipal; text-decoration: none }
+
+            }
+        }
+        .form_contacto{
+            h1{
+                text-align: center;
+            }
+            grid-area: b;
+            ul{
+                padding:0;
+            }
+        }
+    }
 }
