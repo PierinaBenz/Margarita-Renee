@@ -175,10 +175,11 @@
         .div_central_productos {
             .div_img_productos{
                 .div_img{
-                    max-width: 50%;
+                    max-width: 100%;
                     grid-template-columns: repeat(2,15fr) !important;
                     .productos{
-                        max-width: 50%;
+                        width: 200px;
+                        height: 200px;
                         box-sizing: content-box;
                         object-fit: cover;
                     }
