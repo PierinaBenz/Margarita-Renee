@@ -36,7 +36,7 @@
     }
 
     main{
-        margin: 0 300px 100px 300px;
+        margin: 0 5% 10% 5%;
         #carrousel_index{
             aspect-ratio: 16/9;
             width: 100%;
@@ -259,7 +259,7 @@
             grid-template-rows: repeat(1,1fr);
             grid-template-areas:
             "a b";
-            margin: 0 10% 0 10%;
+           
             .divImgSomos{
                 grid-area: a;
             }
@@ -283,12 +283,12 @@
     }
 
     .div_productos{
-        margin: 0 210px 0 210px;
+        margin: 0 150px 0 150px;
         display: flex;
         flex-direction: column;
         row-gap: 10px;
         text-align: center;
-        font-size: 16px;
+        font-size: 14px;
         font-family: $fuentePrincipal;
         position:relative;
         top: 12px;
@@ -358,6 +358,8 @@
                         text-decoration: none;
                         color:inherit;
                         img{
+                            width: 200px;
+                            height: 200px;
                             object-fit: cover;
                         }
                     }

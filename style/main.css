@@ -72,7 +72,7 @@ html, body {
   font-family: "PT Serif", serif; }
 
 main {
-  margin: 0 300px 100px 300px; }
+  margin: 0 5% 10% 5%; }
   main #carrousel_index {
     aspect-ratio: 16/9;
     width: 100%;
@@ -250,8 +250,7 @@ footer {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(1, 1fr);
-    grid-template-areas: "a b";
-    margin: 0 10% 0 10%; }
+    grid-template-areas: "a b"; }
     .div_somos .quienesSomos .divImgSomos {
       grid-area: a; }
     .div_somos .quienesSomos #pSomos {
@@ -270,12 +269,12 @@ footer {
   display: flex; }
 
 .div_productos {
-  margin: 0 210px 0 210px;
+  margin: 0 150px 0 150px;
   display: flex;
   flex-direction: column;
   row-gap: 10px;
   text-align: center;
-  font-size: 16px;
+  font-size: 14px;
   font-family: "PT Serif", serif;
   position: relative;
   top: 12px; }
@@ -333,6 +332,8 @@ footer {
           text-decoration: none;
           color: inherit; }
           .div_productos .div_central_productos .div_img_productos .div_img a img {
+            width: 200px;
+            height: 200px;
             object-fit: cover; }
 
 /* PREGUNTAS FRECUENTES */
@@ -518,10 +519,10 @@ footer {
     .div_productos .div_central_productos .div_categorias {
       display: none; }
     .div_productos .div_central_productos .div_img_productos .div_img {
-      max-width: 100%;
+      max-width: 50%;
       grid-template-columns: repeat(2, 15fr) !important; }
       .div_productos .div_central_productos .div_img_productos .div_img .productos {
-        max-width: 100%;
+        max-width: 50%;
         box-sizing: content-box;
         object-fit: cover; }
     .div_productos .section_f {
